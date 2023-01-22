@@ -1,0 +1,18 @@
+@mixin sitetitel($weight, $size, $height, $spacing, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  color: $color;
+}
+@mixin responsiv($sizi) {
+  @if $sizi == tablate {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  } @else if $sizi == mabel {
+    @media screen and (max-width: 575px) {
+        @content;
+    }
+  }
+}

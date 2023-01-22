@@ -1,0 +1,52 @@
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+img {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  font-family: "League Spartan";
+  background: #f2f2f2;
+  // overflow: hidden;
+}
+.container {
+  width: 100%;
+  max-width: 144rem;
+  padding-right: 16.5rem;
+  padding-left: 16.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  @include responsiv(tablate) {
+    max-width: 1200px;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  @include responsiv(mabel) {
+    width: 100%;
+    max-width: 37.5rem;
+  }
+}
+.titel-div__titel {
+  @include sitetitel(700, 1.7rem, 1.6rem, normal, #ffffff);
+}
+.titel-div__paragriph {
+  @include sitetitel(400, 1.7rem, 1.6rem, normal, #ee69a4);
+}
+.btn__paragriph {
+  @include sitetitel(500, 1.7rem, 2.2rem, normal, #ffffff);
+}
